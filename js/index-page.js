@@ -1,4 +1,10 @@
 export const IndexPage =
-  `<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lacus in turpis bibendum convallis egestas vitae nunc. Maecenas a hendrerit ipsum, eget pretium leo. Vivamus velit ligula, mattis at lectus et, maximus dignissim magna. Suspendisse imperdiet risus ac odio tempor, at suscipit mauris pulvinar. Quisque hendrerit quam non ante venenatis laoreet. Nulla gravida quis quam non luctus. Curabitur sit amet felis venenatis, facilisis est eu, dictum risus. Cras ullamcorper condimentum ornare. Nunc ultricies risus a euismod finibus. Fusce pulvinar, lorem et finibus scelerisque, elit lectus cursus lorem, aliquet auctor urna enim et ipsum.
-  </p>`
+  `<div class="wrapper_index">
+    <h2>
+      Structure and Interpretation of Computer Programs Tasks
+    </h2>
+    <h5>
+      as solved on JavaScript by <a href="https://github.com/dariadia">@dariadia</a>
+    </h5>
+    <p>Read the book <a href="http://mitpress.mit.edu/sicp/">here</a> </p>
+  </div>`
