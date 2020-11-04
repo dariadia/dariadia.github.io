@@ -2,7 +2,6 @@ import { IndexPage } from "./index-page.js";
 import { getNavigation } from "./navigation.js";
 
 const INDEX = "index";
-const INDEX_PAGE = { chapter: INDEX };
 const mainNode = document.querySelector(".wrapper_main");
 
 const checkIfFirstRender = () => {
@@ -38,9 +37,11 @@ async function getTaskNode(chapter, task) {
 const setNavigationListeners = () => {
 	const navigationNode = document.querySelector(".navigation_list");
 	navigationNode.addEventListener("click", event => {
-		let { chapter, task } = event.target.dataset;
+    let { chapter = INDEX, task } = event.target.dataset;
+    
 		localStorage.setItem("currentChapter", chapter);
-		localStorage.setItem("currentTask", task);
+    localStorage.setItem("currentTask", task);
+    
 		window.location.reload();
 	});
 }

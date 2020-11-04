@@ -9,7 +9,9 @@ export const getNavigation = () => {
 			`<li class="contents_heading">Chapter ${chapter}
 				<ul>${chapterNode}</ul>
 			</li>`
-	}
+  }
+  navigationNode.innerHTML += 
+    `<li class="contents_heading contents_heading__home">Home</li>`;
 }
 
 const getTasksPerChapter = (chapterTasks, chapter) => {
