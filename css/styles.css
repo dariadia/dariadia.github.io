@@ -7,8 +7,17 @@
   padding: 50px 0;
 }
 
+.wrapper_index {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 50vh;
+}
+
 .wrapper_task {
   width: fit-content;
+  min-width: 50vw;
   margin: auto;
   box-shadow: 0 0 10px #2a623d;
 }
@@ -43,6 +52,12 @@
 
 .text-muted:hover {
   color: white!important;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.contents_heading__home:hover {
+  color: white;
   transition: color 0.2s;
   cursor: pointer;
 }
